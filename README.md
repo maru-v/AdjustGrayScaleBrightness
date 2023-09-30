@@ -10,10 +10,10 @@ The processes used are as follows For details, please refer to the respective li
 
 # Sample images of results
 - input  
-[input](data/sample.jpg "input")
+![input](data/sample.jpg "input")
 
-- result
-[result](data/save/sample/sample_result.jpg "resulit")
+- result  
+![result](data/save/sample/sample_result.jpg "resulit")
 
 The "diff" indicates the difference from the original image.
 
