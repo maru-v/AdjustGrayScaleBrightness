@@ -11,7 +11,6 @@ def load_grayimg(file_path):
     if len(img[0,0,:]) == 3:
         print("Convert color to grayscale.")
         grayimg = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-        cv2.imwrite("butterfly_gray.jpg", grayimg)
     else:
         print("Unexpected number of channels in the image, terminate the process.")
         sys.exit(1)
@@ -48,9 +47,9 @@ if __name__ == "__main__":
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
     claheimg = clahe.apply(grayimg)
 
-    # 3.retinex : https://github.com/aravindskrishnan/Retinex-Image-Enhancement
-    variance_list = [15, 80, 30]
-    variance = 300
+    # 3.retinex : https://github.com/aravindskrishnan/Retinex-Image-Enhancement, https://santhalakshminarayana.github.io/blog/retinex-image-enhancement
+    variance_list = [15, 80, 250]
+    variance = 250
     grayimg3ch = np.stack((grayimg,) * 3, -1)
     img_ssr = retinex.SSR(grayimg3ch, variance)
     img_msr = retinex.MSR(grayimg3ch, variance_list)

@@ -6,11 +6,11 @@ It takes a color or grayscale image file as input and processes the brightness a
 The processes used are as follows For details, please refer to the respective links.
 - [equalizeHist](http://labs.eecs.tottori-u.ac.jp/sd/Member/oyamada/OpenCV/html/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html)
 - [CLAHE](http://labs.eecs.tottori-u.ac.jp/sd/Member/oyamada/OpenCV/html/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html)
-- [Retinex](https://github.com/aravindskrishnan/Retinex-Image-Enhancement)
+- [Retinex[1]](https://github.com/aravindskrishnan/Retinex-Image-Enhancement), [Retinex[2]](https://santhalakshminarayana.github.io/blog/retinex-image-enhancement)
 
 # Sample images of results
 - input  
-![input](data/sample.jpg "input")
+<img src="data/sample.jpg" width="320">
 
 - result  
 ![result](data/save/sample/sample_result.jpg "resulit")

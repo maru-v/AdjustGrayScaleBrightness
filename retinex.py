@@ -66,21 +66,3 @@ def SSR(img, variance):
                                * 255
     img_retinex = np.uint8(img_retinex)        
     return img_retinex
-
-
-# variance_list=[15, 80, 30]
-# variance=300
-    
-# img = cv2.imread('image.jpg')
-# img_msr=MSR(img,variance_list)
-# img_ssr=SSR(img, variance)
-
-# cv2.imshow('Original', img)
-# cv2.imshow('MSR', img_msr)
-# cv2.imshow('SSR', img_ssr)
-# cv2.imwrite('SSR.jpg', img_ssr)
-# cv2.imwrite('MSR.jpg',img_msr)
-
-
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
